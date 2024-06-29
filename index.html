@@ -1,0 +1,76 @@
+
+<html>
+<head>
+    <div class="header">
+        <h2>My blog</h2>
+      </div>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,100&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav>
+<ul class="topnav">
+  <li><a class="active" href="index.html">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+  </nav>
+  
+  <img src="https://th.bing.com/th/id/R.af44e470253784a97bcae1b97c571954?rik=PEhTYC%2bv8d9V%2fA&pid=ImgRaw&r=0"/>
+  <h1>Understanding and Implementing CSS in HTML</h1>
+  <h3>By:Aaron Lei</h3>
+  <h4>Written on 11/10/23</h4>
+  <h2>Introduction</h2>
+  <p>Cascading Style Sheets (CSS) is a powerful tool used in web development to control the appearance of HTML documents. It is one of the cornerstone technologies of the World Wide Web, alongside HTML and JavaScript.</p>
+  <h2>Understanding CSS</h2>
+  <p>CSS is a style sheet language that describes the look and formatting of a document written in HTML. It provides a more efficient way of styling web pages, allowing developers to control layout, colors, fonts, and more across multiple pages at once. CSS can be applied to any XML document and is particularly useful in styling HTML and XHTML.</p>
+  <h2>How CSS Works</h2>
+  <p>CSS works by associating rules with HTML elements. These rules define how the elements are to be displayed. A rule in CSS is made up of two main parts: a selector, and one or more declarations. The selector typically corresponds to an HTML element, and the declarations are properties defined within curly braces {}. Each property has a value, and they are separated by a colon.
+</p>
+  <p>    For example, to style all <code>p</code> elements with red text color, you would write:
+  <code>p {
+    color: red;
+}
+    </code>
+  </p>
+  <h2>Implementing CSS in HTML</h2>
+  <p>There are three ways to insert CSS into HTML: inline, internal, and external.</p>
+  <p>1.Inline CSS: Styles are applied directly to individual HTML elements using the <code>style</code> attribute. This method can be useful for applying unique styles to specific elements, but it can become cumbersome for larger projects.</p>
+  <p>For example,<code>  style="color: red;"This is a red paragraph.</code></p>
+  <p>
+
+    2.Internal CSS: Styles are defined within the <code>style</code> element inside the <code>head</code> section of an HTML page. This method is useful for single documents with unique styles.</p>
+  <p>
+    For example,
+    <code>
+      head
+style
+p {
+    color: red;
+}
+/style
+/head
+    </code>
+  </p>
+<p>3.External CSS: Styles are defined in an external .css file. This method is the most common for larger websites, as it allows for style reuse across multiple pages.</p>
+  <p> For example, <code>head
+    link rel="stylesheet" type="text/css" href="styles.css"
+    /head</code></p>
+  <p>In the <code>styles.css</code> file, you would define your styles:</p>
+  <p>
+    <code>
+      p {
+    color: red;
+}
+    </code>
+  </p>
+  <h2>
+    Conclusion
+  </h2>
+  <p>
+    Understanding CSS and its implementation in HTML is fundamental to web development. It allows for the separation of content and design, leading to more organized and maintainable code. As you continue to explore CSS, you’ll discover a wide range of properties and values that can help you create visually engaging and user-friendly websites.
+  </p>
+</body>
+</html>
